@@ -2,7 +2,7 @@ import React from "react";
 import { Todo } from "../models/todo";
 import { useLocalStorage } from "./useLocalStorage";
 
-export const TodoContext = React.createContext(undefined);
+export const TodoContext = React.createContext({} as any);
 
 export const TodoProvider = (props:any) => {
     const {
