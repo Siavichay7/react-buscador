@@ -1,13 +1,20 @@
 import { Button } from "primereact"
+import React from "react";
+import { TodoContext } from "../TodoContext";
+import "./CreateTodoButton.css";
 
 export const CreateTodoButton = () => {
-    const onClickButton = (text: string) => {
-        alert(text)
+    const {
+        setOpenModal,
+        openModal,
+    } = React.useContext(TodoContext);
+    const onClickButton = () => {
+        setOpenModal(!openModal);
     }
     return (
         <Button 
-            label="+" className="p-button-primary" 
-            onClick={() => onClickButton("Aqui deberia abrir un modal")}
+            label="+" className="p-button-primary button" 
+            onClick={onClickButton}
         />
     )
 }

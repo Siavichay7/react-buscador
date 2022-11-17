@@ -1,9 +1,11 @@
 import { InputText } from 'primereact';
 import React from 'react';
+import { TodoContext } from '../TodoContext';
 import './TodoSearch.css';
 
-export const TodoSearch = ({searchValue, setSearchValue}: any) => {
-
+export const TodoSearch = () => {
+    const {searchValue, setSearchValue} = React.useContext(TodoContext);
+    
     const onSearchValueChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         console.log(event.target.value);
         setSearchValue(event.target.value);
