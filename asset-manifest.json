@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-buscador/static/css/main.b16a2378.css",
+    "main.js": "/react-buscador/static/js/main.164b180f.js",
+    "static/js/775.155c781a.chunk.js": "/react-buscador/static/js/775.155c781a.chunk.js",
+    "static/js/921.cce5998a.chunk.js": "/react-buscador/static/js/921.cce5998a.chunk.js",
+    "static/media/primeicons.svg": "/react-buscador/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/primeicons.eot": "/react-buscador/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/react-buscador/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/react-buscador/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/primeicons.woff2": "/react-buscador/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "index.html": "/react-buscador/index.html",
+    "main.b16a2378.css.map": "/react-buscador/static/css/main.b16a2378.css.map",
+    "main.164b180f.js.map": "/react-buscador/static/js/main.164b180f.js.map",
+    "775.155c781a.chunk.js.map": "/react-buscador/static/js/775.155c781a.chunk.js.map",
+    "921.cce5998a.chunk.js.map": "/react-buscador/static/js/921.cce5998a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b16a2378.css",
+    "static/js/main.164b180f.js"
+  ]
+}
