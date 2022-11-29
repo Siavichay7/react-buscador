@@ -56,12 +56,19 @@ export const App = () => {
             setSearchValue={setSearchValue}
           />
         </TodoHeader>
-        <TodoList>
-          {error && <TodosError></TodosError>}
-          {loading && <TodosLoading></TodosLoading>}
-          {!loading && !searchedTodos.length && <EmptyTodos></EmptyTodos>}
-
-          {searchedTodos.map((todo: Todo) => (
+        <TodoList
+          error={error}
+          loading={loading}
+          searchedTodos={searchedTodos}
+          totalTodos={totalTodos}
+          searchText={searchValue}
+          onError={() => <TodosError />}
+          onLoading={() => <TodosLoading />}
+          onEmptyTodos={() => <EmptyTodos />}
+          onEmptySearchResults={(searchText: String) => (
+            <p>No hay resultados de la busqueda para {searchText}</p>
+          )}
+          render={(todo: any) => (
             <TodoItem
               key={todo.text}
               text={todo.text}
@@ -69,8 +76,8 @@ export const App = () => {
               onComplete={() => completeTodo(todo.text)}
               onDelete={() => deleteTodo(todo.text)}
             />
-          ))}
-        </TodoList>
+          )}
+        />
         {!!openModal && (
           <Modal>
             <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
