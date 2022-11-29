@@ -1,6 +1,5 @@
 import { InputText } from "primereact";
 import React from "react";
-import { TodoContext } from "../TodoContext";
 import "./TodoSearch.css";
 
 export const TodoSearch = ({ searchValue, setSearchValue }: any) => {

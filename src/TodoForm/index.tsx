@@ -1,11 +1,11 @@
 import { Button, InputTextarea } from "primereact";
 import React from "react";
-import { TodoContext } from "../TodoContext";
+import { useTodos } from "../App/useTodos";
 import "./TodoForm.css";
 
-export const TodoForm = () => {
+export const TodoForm = ({ addTodo, setOpenModal }: any) => {
   const [newTodoValue, setNewTodoValue] = React.useState("");
-  const { setOpenModal, openModal, addTodo } = React.useContext(TodoContext);
+  // const {  } = useTodos();
 
   const onCancel = () => {
     setOpenModal(false);
